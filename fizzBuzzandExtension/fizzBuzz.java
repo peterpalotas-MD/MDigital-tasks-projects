@@ -18,21 +18,22 @@ public class fizzBuzz {
     }
 
     public static String fizzBuzzTask(int start, int end){
-
+        StringBuilder sb = new StringBuilder();
         for(int i = start; i<=end; i++){
             if(i % 15 == 0){
-                System.out.println("FizzBuzz");
+                sb.append("FizzBuzz ");
             }else if(i % 3 == 0){
-                System.out.println("Fizz");
+                sb.append("Fizz ");
             }else if(i % 5 == 0) {
-                System.out.println("Buzz");
+                sb.append("Buzz ");
             }
             else{
-                System.out.println( Integer.toString(i));
+                sb.append(Integer.toString(i) + " ");
 
             }
+
         }
-        return "";
+        return sb.toString();
 
     }
 
